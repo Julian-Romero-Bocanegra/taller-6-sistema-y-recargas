@@ -1,0 +1,11 @@
+BASE POSGREST
+1). Tenemos que realizar la instalación de nano, Docker, Docker-compose y git dentro de la máquina virtual VM-posgrest-romero.
+2). Despues de esto tenemos que realizar la copia de la base de datos en la maquina virtual VM-posgrest-romero. Por medio de los siguientes comenados.
+3). Despues de ello creamos un archivo .env dentro de cd sistema-recargas-viajes-db, con los siguientes datos para que asi el sistema los tome como las variables des entorno correspondientes.
+4). Por medio del comando Docker compose up, iniciamos el contenedor para traer la base datos, una vez allí y por medio del comando Docker compose up -d, podemos ver que se ha iniciado correctamente el contenedor.
+5). Por medio del comando (Docker exec -it db bash) ingresamos al contendor que contiene la base datos y por medio del comando (psql -U romero-admin -d viajes_romero), ingresamos a la base de datos para identificar las tablas presentes allí.
+
+BASE APP
+1).Tenemos que realizar la instalación de nano, Docker, Docker-compose, Python y pip dentro de la máquina virtual VM-app-romero.
+2). Después de esto en la maquina virtual app, creamos el entorno virtual por medio de los siguientes comandos python3 -m venv venv y source venv/bin/actívate.
+3). Dentro del entorno virtual intalamos fastapi , psycop2 y redis.
